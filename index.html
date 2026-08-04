@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nahid Hasan — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Custom cursor dot (desktop) ===== -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ===== Top bar ===== -->
+<header class="topbar">
+  <a href="#top" class="brand">nahid<span class="accent">.</span>hasan</a>
+  <nav class="topnav" id="topnav">
+    <a href="#about"><span class="path">~/about</span></a>
+    <a href="#skills"><span class="path">~/stack</span></a>
+    <a href="#education"><span class="path">~/education</span></a>
+    <a href="#projects"><span class="path">~/projects</span></a>
+    <a href="#experience"><span class="path">~/experience</span></a>
+    <a href="#certs"><span class="path">~/certs</span></a>
+    <a href="#contact"><span class="path">~/contact</span></a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ===== Directory rail (desktop side nav) ===== -->
+<nav class="rail" id="rail">
+  <div class="rail-line"></div>
+  <a href="#top" class="rail-dot active" data-label="~/"></a>
+  <a href="#about" class="rail-dot" data-label="~/about"></a>
+  <a href="#skills" class="rail-dot" data-label="~/stack"></a>
+  <a href="#education" class="rail-dot" data-label="~/education"></a>
+  <a href="#projects" class="rail-dot" data-label="~/projects"></a>
+  <a href="#experience" class="rail-dot" data-label="~/experience"></a>
+  <a href="#certs" class="rail-dot" data-label="~/certs"></a>
+  <a href="#contact" class="rail-dot" data-label="~/contact"></a>
+</nav>
+
+<main id="top">
+
+  <!-- ===== HERO — terminal / API response ===== -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Software engineering student</p>
+        <h1 class="hero-title">Building things<br>on the <span class="accent">backend</span><br>one commit<br>at a time.</h1>
+        <p class="hero-sub">I'm Nahid — I design APIs, wrangle data structures, and occasionally teach a server to talk to a farmer in Bangla. Currently open to internships &amp; entry-level software engineering roles.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See the work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><span class="num">300+</span><span class="lbl">problems solved</span></div>
+          <div><span class="num">6+</span><span class="lbl">projects shipped</span></div>
+          <div><span class="num">3</span><span class="lbl">languages fluent in code</span></div>
+        </div>
+      </div>
+
+      <div class="hero-terminal" id="heroTerminal">
+        <div class="term-head">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="term-title">bash — GET /nahid-hasan</span>
+        </div>
+        <div class="term-body">
+          <div class="term-line"><span class="prompt">$</span> <span id="typedCmd"></span><span class="caret" id="caretCmd">&nbsp;</span></div>
+          <pre class="term-json" id="termJson"></pre>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span>scroll</span>
+      <svg width="14" height="20" viewBox="0 0 14 20"><path d="M7 1v17M2 13l5 5 5-5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-head">
+      <span class="path">About</span>
+      <h2>Who's running this process</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo">
+
+        <div class="photo-frame">
+    <img src="images/profile.jpg.png" alt="Nahid Hasan" id="profileImg">
+</div>
+        <!-- <div class="photo-frame">
+          <div class="photo-placeholder">
+            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+            <span>your photo here</span>
+          </div> -->
+          <img src="" alt="Nahid Hasan" id="profileImg" style="display:none;">
+           <!-- <img src="images/profile.jpg.png" alt="Robiul Islam Noyan" id="profileImg"> -->
+        </div>
+        <div class="photo-tag"></div>
+      </div>
+      <div class="about-copy">
+        <br>
+        <p>I'm a Software Engineering student, currently deep in coursework, competitive programming, and side projects that scratch an itch I actually care about — mostly backend systems and, lately, agri-tech for Bangla-speaking farmers.</p>
+        <p>My day-to-day lives somewhere between a Codeforces tab, a half-finished API, and a notebook of half-drawn UML diagrams. I like problems that have a clean, correct answer and the discipline it takes to find it — which is probably why competitive programming stuck with me.</p>
+        <p>Outside of pure code, I'm interested in how software can solve very local, very real problems — like giving smallholder farmers AI-backed crop advice in their own language.</p>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-k">Focus</span><span class="fact-v">Development & ML</span></div>
+          <div class="fact"><span class="fact-k">Also into</span><span class="fact-v">Competitive Programming</span></div>
+          <div class="fact"><span class="fact-k">Status</span><span class="fact-v">Open to internships / entry-level roles</span></div>
+          <div class="fact"><span class="fact-k">Languages</span><span class="fact-v">Bengali English</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section alt" id="skills">
+    <div class="section-head">
+      <span class="path">Stack</span>
+      <h2>What I build with</h2>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-card">
+        <h3>Languages</h3>
+        <ul class="tag-list">
+          <li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li><li>C</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <h3>Backend &amp; Data</h3>
+        <ul class="tag-list">
+          <li>REST APIs</li><li>SQL</li><li>File I/O Systems</li><li>OOP Design</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <h3>CS Fundamentals</h3>
+        <ul class="tag-list">
+          <li>Data Structures &amp; Algorithms</li><li>Operating Systems</li><li>Theory of Computation</li><li>DBMS</li>
+        </ul>
+      </div>
+      <div class="stack-card">
+        <h3>Tools &amp; Workflow</h3>
+        <ul class="tag-list">
+          <li>Git &amp; GitHub</li><li>VS Code</li><li>Linux</li><li>Draw.io / Mermaid</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section" id="education">
+    <div class="section-head">
+      <span class="path">Education</span>
+      <h2>Academic background</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h3>B.Sc. in Software Engineering</h3>
+            <span class="tl-date">2024 — Present</span>
+          </div>
+          <p class="tl-org">Daffodil International University</p>
+          <p class="tl-desc">Coursework spanning software engineering Data structures &amp algorithms operating systems theory of computation database management and object-oriented design.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-marker"></div>
+        <div class="tl-content">
+          <div class="tl-top">
+            <h3>Higher Secondary Certificate</h3>
+            <span class="tl-date">2022</span>
+          </div>
+          <p class="tl-org">Dr. Khandaker Mosharraf Hossain College</p>
+          <p class="tl-desc">Completed higher secondary education with a focus on Science building the foundation for pursuing Software Engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section alt" id="projects">
+    <div class="section-head">
+      <span class="path">Projects</span>
+      <h2>Things I've shipped</h2>
+    </div>
+    <div class="project-grid">
+
+      <article class="project-card featured">
+        <div class="project-top">
+          <span class="project-tag">Featured</span>
+          <span class="project-status">In progress</span>
+        </div>
+        <h3>Krishi Sahayak <span class="bn">(কৃষি সহায়ক)</span></h3>
+        <p>A Bengali-language, AI-driven agricultural assistance application — crop recommendations, seasonal planning, and yield prediction for smallholder farmers, designed from the ground up in Bangla.</p>
+        <ul class="project-meta">
+          <li>AI Crop Recommendation</li>
+          <li>Seasonal Crop Planning</li>
+          <li>Yield Prediction</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="link-btn">Case study →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">C · File Handling</span>
+        </div>
+        <h3>Bus Reservation System</h3>
+        <p>A command-line bus ticket reservation system built in C, using file handling for persistent seat and booking records.</p>
+        <div class="project-links">
+          <a href="https://github.com/nahidhasannd14-del/Academic-project" target="_blank" rel="noopener" class="link-btn">View code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">HTML · CSS · JS</span>
+        </div>
+        <h3>This Portfolio</h3>
+        <p>A hand-built, from-scratch portfolio site — no templates — designed around a terminal / API-response visual identity that fits a backend-leaning developer.</p>
+        <div class="project-links">
+          <a href="#" class="link-btn">You're looking at it →</a>
+        </div>
+      </article>
+
+      <article class="project-card placeholder-card">
+        <div class="project-top">
+          <span class="project-tag">Add project</span>
+        </div>
+        <h3>Your next build</h3>
+        <p>Swap this card for your next project — problem, stack, and a link to the repo or a live demo.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== ROLES & EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="section-head">
+      <span class="path">Experience</span>
+      <h2>Roles || Responsibilities &amp; experience</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card">
+        <h3>Competitive Programmer</h3>
+        <span class="exp-when">Ongoing</span>
+        <p>Solving problems consistently on Codeforces, focused on core DSA, greedy algorithms, and structured problem-solving under contest constraints.</p>
+      </div>
+      <div class="exp-card">
+        <h3>Software Engineering Student</h3>
+        <span class="exp-when"> Ongoing</span>
+        <p>Studying Software Engineering while building practical projects and strengthening programming fundamentals. Continuously learning modern development tools software design principles and industry best practices.</p>
+      </div>
+      <div class="exp-card">
+        <h3> Role</h3>
+        <span class="exp-when">volunteer</span>
+        <p>Volunteer experience at Job Utsob</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS & ACHIEVEMENTS ===== -->
+  <section class="section alt" id="certs">
+    <div class="section-head">
+      <span class="path">Certifications</span>
+      <h2>Certifications &amp; achievements</h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <h3>Certification</h3>
+        <p>OOPs in Java</p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🎯</div>
+        <h3>Achievement</h3>
+        <p></p>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"></div>
+        <h3>Certification</h3>
+        <p>DSA With C++</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-inner">
+      <span class="path">Contact</span>
+      <h2>Let's build something.</h2>
+      <p>Open to internships and entry-level software engineering roles. The fastest way to reach me is email — I read everything.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="btn btn-primary">nahidhasannd14@gmail.com</a>
+      </div>
+      <div class="social-row">
+        <a href="https://github.com/nahidhasannd14-del" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/md-nahid-hasan-792366210" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Codeforces</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Nahid Hasan</span>
+  <span class="footer-status"><span class="status-dot"></span> status: open to work</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
